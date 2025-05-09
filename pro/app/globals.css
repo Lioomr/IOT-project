@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  /* Optional: Add more theme colors if needed */
+  /* --primary: #2563eb; */
+  /* --secondary: #475569; */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    /* --primary: #3b82f6; */
+    /* --secondary: #94a3b8; */
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  /* REMOVED: font-family: Arial, Helvetica, sans-serif; */
+  /* The font will now default to --font-sans (Geist Sans) */
+}
+
+/* Optional: Add base styles for links if desired */
+/* a {
+  @apply text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300;
+} */
+

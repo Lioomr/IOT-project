@@ -1,0 +1,46 @@
+# Python virtual environment
+growvision_backend/venv/
+venv/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# SQLite Database
+growvision_backend/db.sqlite3
+db.sqlite3
+
+# Environment variables
+growvision_backend/.env
+.env
+.env.local
+.env.*.local
+!/.env.example # Often good to commit an example env file
+
+# Node.js dependencies
+pro/node_modules/
+node_modules/
+
+# Next.js build output and cache
+pro/.next/
+.next/
+
+# IDE/Editor specific files (examples)
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# If your ml_models or readings folders contain very large files
+# that you plan to share via Google Drive, add them too:
+# growvision_backend/ml_models/
+# growvision_backend/readings/
+# Or specific large files:
+growvision_backend/ml_models/saved_models/DenseNet201_model.h5
+# Any other large files or logs
+*.log
+*.temp
